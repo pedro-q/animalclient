@@ -1,0 +1,116 @@
+<div fxflex="100" fxLayout="row" fxFlexAlign="start center" fxLayoutGap="1.3%">
+	<h1 fxFlex.lt-md="60" fxFlex="auto" fxFlexAlign="start center">{{name}} Items</h1>
+	<button fxFlex.lt-md="40" 
+			color="accent" 
+			*ngIf="!friend && currentKey !== userKey"
+			fxFlex="10" 
+			(click)="addFriend()"
+			fxFlexAlign="end center" 
+			mat-stroked-button>
+				<mat-icon>person_add</mat-icon> Subscribe
+	</button>
+	<button fxFlex.lt-md="40" 
+			color="accent" 
+			*ngIf="friend && currentKey !== userKey"
+			disabled="true"
+			fxFlex="10" 
+			fxFlexAlign="end center" 
+			mat-stroked-button>
+				<mat-icon>check</mat-icon> Subscribed
+	</button>
+	<button fxFlex.lt-md="40" 
+			color="accent" 
+			*ngIf="currentKey === userKey"
+			(click)="copyMessage()"
+			fxFlex="10" 
+			fxFlexAlign="end center" 
+			mat-stroked-button>
+				<mat-icon>share</mat-icon> Share List
+	</button>
+</div>
+<div fxflex="50" fxLayout="column" fxLayoutGap="1.3%">
+<div fxFlex="100" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="3%">
+<mat-form-field fxFlex.lt-md="100" fxFlex="30"  fxFlexAlign="start">
+  <mat-label>Select an option</mat-label>
+  <mat-select [(value)]="selected" (selectionChange)="onChange($event)">
+    <mat-option value="fish">Fishes</mat-option>
+    <mat-option value="fossil">Fossils</mat-option>
+    <mat-option value="insect">Insects</mat-option>
+    <mat-option value="art">Art</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field fxFlex.lt-md="100" fxFlex="30" fxFlexAlign.gt-md="end"  fxFlexAlign="start">
+  <mat-label>Search Names</mat-label>
+  <input matInput #searchText (keyup)="onKeyUp(searchText.value)"/>
+</mat-form-field>
+</div>
+<div fxFlex="100" fxLayout="column">
+<div style="overflow-x:auto">
+<mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z2"  >
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <mat-header-cell *matHeaderCellDef style="width:3.2% !important; flex: 0 0 3.2%"> No. </mat-header-cell>
+    <mat-cell *matCellDef="let element; let i = index;" style="width:3.2% !important; flex: 0 0 3.2%"> {{(i+1)+(paginator.pageIndex*paginator.pageSize)}} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element['name']}} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="price">
+    <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element['price']}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="time">
+    <mat-header-cell *matHeaderCellDef> Time </mat-header-cell>
+    <mat-cell *matCellDef="let element"><span class="prw"> {{element['time']}} </span></mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="hour">
+    <mat-header-cell *matHeaderCellDef> Hour </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element['hour']}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="rare">
+    <mat-header-cell *matHeaderCellDef> Rarity </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element['rare']}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="donated">
+    <mat-header-cell *matHeaderCellDef style="width:10% !important; flex: 0 0 10%;justify-content:center;"> Donated </mat-header-cell>
+    <mat-cell *matCellDef="let element" style="width:10% !important; flex: 0 0 10%;justify-content:center;">
+		<mat-checkbox  [disabled]="disabled" [checked]="response[element.id]?.donated" (change)="setDonated(element.id, $event, selected)"></mat-checkbox> 
+	</mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="stock">
+	<mat-header-cell *matHeaderCellDef style="width:15% !important; flex: 0 0 15%;justify-content:center;"> Stock </mat-header-cell>
+	<mat-cell *matCellDef="let element" style="width:15% !important; flex: 0 0 15%;justify-content:center;"> 
+		<mat-form-field style="max-width:50%" floatLabel='never' >  
+			<input matInput [disabled]="disabled" placeholder="0" type="number" min="0" step="1" [value]="response[element.id]?.stock" (input)="setStock(element.id, $event, selected)">
+		</mat-form-field>
+	</mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+</div>
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions">
+</mat-paginator>
+</div> 
+<div fxFlex="auto" fxLayoutAlign="end" > 
+	<button *ngIf="currentKey === userKey" [disabled]="saving" mat-raised-button color="primary" (click)="save()">{{saving ? "Saving...":"Save"}}</button>
+</div>
+</div>

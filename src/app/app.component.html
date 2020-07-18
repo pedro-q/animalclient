@@ -1,0 +1,20 @@
+<div fxFlexFill>
+	<mat-toolbar class="mat-elevation-z4" color="primary">
+		<div fxFlex="100" fxLayout="row" fxLayoutAlign="start center">
+			<h1 fxFlex>Item Crossing</h1>
+			<div *ngIf="this.router.url.includes('/dashboard')" fxFlex="10" fxFlexAlign="end" fxLayout="row" fxLayoutAlign="end center">
+				<mat-menu #appMenu="matMenu">
+					<button mat-menu-item (click)="goToId()">My Items</button>
+					<a routerLink="dashboard/subscriptions" mat-menu-item>My Subscriptions</a> 
+					<a routerLink="dashboard/profile" mat-menu-item>My Profile</a> 
+				</mat-menu>
+				<button mat-icon-button [matMenuTriggerFor]="appMenu">
+					<mat-icon style="font-size: 36px;cursor:pointer" [inline]="true">menu</mat-icon>
+				</button>
+			</div>
+		</div>
+	</mat-toolbar>
+	<div style="padding:2em">
+		<router-outlet></router-outlet>
+	</div>
+</div>

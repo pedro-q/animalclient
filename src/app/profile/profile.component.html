@@ -1,0 +1,13 @@
+<div fxFlex="100" fxLayout="row" fxLayoutAlign="center center" fxFlexAlign="center center">
+<form [formGroup]="myForm" fxLayoutGap="1.4%"(ngSubmit)="onSubmit()" fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+	<h2 fxFlexAlign="start">Edit Profile</h2>
+	<mat-form-field style="width:100%">
+		<mat-label>Name</mat-label>
+		<input matInput formControlName="name" placeholder="Your name">
+		<mat-error *ngIf="myForm.controls.name.errors">
+			
+		</mat-error>
+	</mat-form-field>
+	<button type="submit" mat-raised-button fxFlexAlign="end" color="primary">Save Profile</button>
+</form>
+</div>

@@ -1,0 +1,295 @@
+{
+	"fossil": [{
+		"name":"Acanthostega",
+		"price":"2000",
+		"id":"FO-1"
+	}, {
+		"name":"Amber",
+		"price":"1200",
+		"id":"FO-2"
+	}, {
+		"name":"Ammonite",
+		"price":"1100",
+		"id":"FO-3"
+	}, {
+		"name":"Ankylo Skull",
+		"price":"3500",
+		"id":"FO-4"
+	}, {
+		"name":"Ankylo Torso",
+		"price":"3000",
+		"id":"FO-5"
+	}, {
+		"name":"Ankylo Tail",
+		"price":"2000",
+		"id":"FO-6"
+	}, {
+		"name":"Anomalocaris",
+		"price":"2000",
+		"id":"FO-7"
+	}, {
+		"name":"Archaeopteryx",
+		"price":"1300",
+		"id":"FO-8"
+	}, {
+		"name":"Archelon Skull",
+		"price":"4000",
+		"id":"FO-9"
+	}, {
+		"name":"Archelon Tail",
+		"price":"3500",
+		"id":"FO-10"
+	}, {
+		"name":"Australopith",
+		"price":"1100",
+		"id":"FO-11"
+	}, {
+		"name":"Brachio Pelvis",
+		"price":"5000",
+		"id":"FO-12"
+	}, {
+		"name":"Brachio Chest",
+		"price":"5500",
+		"id":"FO-13"
+	}, {
+		"name":"Brachio Skull",
+		"price":"6000",
+		"id":"FO-14"
+	}, {
+		"name":"Brachio Tail",
+		"price":"5500",
+		"id":"FO-15"
+	}, {
+		"name":"Coprolite",
+		"price":"1100",
+		"id":"FO-16"
+	}, {
+		"name":"Opthalmo Skull",
+		"price":"2500",
+		"id":"FO-17"
+	}, {
+		"name":"Opthalmo Torso",
+		"price":"2000",
+		"id":"FO-18"
+	}, {
+		"name":"Deinony Tail",
+		"price":"2500",
+		"id":"FO-20"
+	}, {
+		"name":"Deinony Torso",
+		"price":"5000",
+		"id":"FO-22"
+	}, {
+		"name":"Dinosaur Track",
+		"price":"1000",
+		"id":"FO-23"
+	}, {
+		"name":"Diplo Skull",
+		"price":"5000",
+		"id":"FO-24"
+	}, {
+		"name":"Diplo Neck",
+		"price":"4500",
+		"id":"FO-25"
+	}, {
+		"name":"Diplo Chest",
+		"price":"4500",
+		"id":"FO-19"
+	}, {
+		"name":"Diplo Pelvis",
+		"price":"4500",
+		"id":"FO-26"
+	}, {
+		"name":"Diplo Tail",
+		"price":"5000",
+		"id":"FO-27"
+	}, {
+		"name":"Diplo Tail Tip",
+		"price":"4000",
+		"id":"FO-29"
+	}, {
+		"name":"Dimetrodon Skull",
+		"price":"4400",
+		"id":"FO-21"
+	}, {
+		"name":"Dimetrodon Torso",
+		"price":"4000",
+		"id":"FO-28"
+	}, {
+		"name":"Dunkleosteus",
+		"price":"3500",
+		"id":"FO-30"
+	}, {
+		"name":"Eusthenopteron",
+		"price":"2000",
+		"id":"FO-31"
+	},{
+		"name":"Iguanodon Skull",
+		"price":"4000",
+		"id":"FO-34"
+	}, {
+		"name":"Iguanodon Tail",
+		"price":"3000",
+		"id":"FO-35"
+	}, {
+		"name":"Iguanodon Torso",
+		"price":"3500",
+		"id":"FO-36"
+	}, {
+		"name":"Juramaia",
+		"price":"1500",
+		"id":"FO-37"
+	}, {
+		"name":"Mammoth Skull",
+		"price":"3000",
+		"id":"FO-38"
+	}, {
+		"name":"Mammoth Torso",
+		"price":"2500",
+		"id":"FO-39"
+	}, {
+		"name":"Megacero Skull",
+		"price":"4500",
+		"id":"FO-40"
+	}, {
+		"name":"Megacero Torso",
+		"price":"3500",
+		"id":"FO-41"
+	}, {
+		"name":"Megacero Tail",
+		"price":"3000",
+		"id":"FO-42"
+	}, {
+		"name":"Left Megalo Side",
+		"price":"4000",
+		"id":"FO-43"
+	}, {
+		"name":"Right Megalo Side",
+		"price":"5500",
+		"id":"FO-44"
+	}, {
+		"name":"Myllokunmingia",
+		"price":"1500",
+		"id":"FO-45"
+	}, {
+		"name":"Pachy Skull",
+		"price":"4000",
+		"id":"FO-46"
+	}, {
+		"name":"Pachy Tail",
+		"price":"3000",
+		"id":"FO-47"
+	}, {
+		"name":"Parasaur Skull",
+		"price":"3500",
+		"id":"FO-48"
+	}, {
+		"name":"Parasaur Torso",
+		"price":"3000",
+		"id":"FO-49"
+	}, {
+		"name":"Parasaur Tail",
+		"price":"2500",
+		"id":"FO-50"
+	}, {
+		"name":"Plesio Skull",
+		"price":"4000",
+		"id":"FO-51"
+	}, {
+		"name":"Plesio Body",
+		"price":"4500",
+		"id":"FO-52"
+	}, {
+		"name":"Plesio Tail",
+		"price":"4500",
+		"id":"FO-53"
+	}, {
+		"name":"Ptera Body",
+		"price":"4000",
+		"id":"FO-54"
+	}, {
+		"name":"Right Ptera Wing",
+		"price":"4500",
+		"id":"FO-55"
+	}, {
+		"name":"Left Ptera Wing",
+		"price":"4500",
+		"id":"FO-56"
+	}, {
+		"name":"Quetzal Body",
+		"price":"4500",
+		"id":"FO-57"
+	}, {
+		"name":"Right Quetzal Wing",
+		"price":"5000",
+		"id":"FO-58"
+	}, {
+		"name":"Left Quetzal Wing",
+		"price":"5000",
+		"id":"FO-59"
+	}, {
+		"name":"Sabertooth Skull",
+		"price":"2500",
+		"id":"FO-60"
+	}, {
+		"name":"Sabertooth Tail",
+		"price":"2000",
+		"id":"FO-61"
+	}, {
+		"name":"Shark-tooth pattern",
+		"price":"1000",
+		"id":"FO-62"
+	}, {
+		"name":"Spino Skull",
+		"price":"4000",
+		"id":"FO-63"
+	}, {
+		"name":"Spino Torso",
+		"price":"3000",
+		"id":"FO-64"
+	}, {
+		"name":"Spino Tail",
+		"price":"2500",
+		"id":"FO-65"
+	}, {
+		"name":"Stego Torso",
+		"price":"4500",
+		"id":"FO-66"
+	}, {
+		"name":"Stego Tail",
+		"price":"4000",
+		"id":"FO-67"
+	}, {
+		"name":"Stego Skull",
+		"price":"5000",
+		"id":"FO-68"
+	}, {
+		"name":"T. Rex Skull",
+		"price":"6000",
+		"id":"FO-69"
+	}, {
+		"name":"T. Rex Torso",
+		"price":"5500",
+		"id":"FO-70"
+	}, {
+		"name":"T. Rex Tail",
+		"price":"5000",
+		"id":"FO-71"
+	}, {
+		"name":"Tricera Skull",
+		"price":"5500",
+		"id":"FO-72"
+	}, {
+		"name":"Tricera Torso",
+		"price":"5000",
+		"id":"FO-73"
+	}, {
+		"name":"Tricera Tail",
+		"price":"4500",
+		"id":"FO-74"
+	}, {
+		"name":"Trilobite",
+		"price":"1300",
+		"id":"FO-75"
+	}]
+}
